@@ -128,7 +128,7 @@ doSomeComplexAndSlowStuff will be done in the rarity actor:
 - If it changes state of this it will break akka state management => Thread safety is not anymore assured
 - It will block rarity for something that doesnt belong to rarity => Hard to tune performance
 
-:boom: :boom: :boom: **Only forward on forward method** :boom: :boom: :boom:
+:boom: :boom: :boom: **Only forward on ponified method** :boom: :boom: :boom:
  
 > Some simple routing logic are completely fine although  
 
@@ -209,7 +209,7 @@ Actors|Messages|Akka|pony|Synchronized call with work stealing pool of 5 threads
 
 > Obviously Pony is slower than Akka. Akka is also slower than old synchronization mechanism in certain cases
 >
-> We are choosing actor-based architecture for case where the abstraction is more important than the potential 
+> You are choosing actor-based architecture for case where the abstraction is more important than the potential 
 > performance impact
 >
 > The same applies to akka-pony, if your system would handle less than 1 million messages per seconds akka pony 
