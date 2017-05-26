@@ -195,6 +195,7 @@ You cannot reanimate a pony.
 
 Akka pony has been designed in order to limit performance impact on Akka actor. 
 Here is some metrics for multiple actors calling a single actor on my machine (Not a fast one)
+
 Actors|Messages|Akka|pony|Synchronized call with work stealing pool of 5 threads 
 ---|---|---|---|---
 3+1|10 000|54 ms|100 ms|18 ms
